@@ -1,0 +1,146 @@
+@font-face {
+  font-family: Roboto;
+  src: url(/fonts/Roboto-Regular.ttf);
+}
+
+body {
+  display: grid;
+  grid-template-areas: "header" "cart";
+  grid-template-rows: 100px 1fr;
+  grid-template-columns: 1fr;
+  row-gap: 10px;
+  column-gap: 10px;
+  height: 100vh;
+  margin: 0;
+  font-family: "Roboto";
+}
+
+#header {
+  grid-area: header;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #3f72af;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+#logo {
+  width: 100px;
+  height: 100px;
+}
+
+#logo-slika {
+  height: 100px;
+}
+
+#slike img {
+  max-width: 40px;
+  height: auto;
+  margin-right: 10px;
+}
+
+#cart-naslov {
+  text-align: center;
+  margin-top: 0px;
+}
+
+#cart {
+  grid-area: cart;
+  position: relative;
+  background: #dbe2ef;
+  padding: 20px;
+}
+
+#glavni-container {
+  border: 2px solid #7a8e9e;
+  border-radius: 2%;
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+#prvi-redak {
+  display: flex;
+  justify-content: space-around;
+}
+
+#naziv-proizvoda,
+#kolicina-proizvoda {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#kolicina-proizvoda {
+  margin-right: 20px;
+}
+
+#retci {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-content: space-around;
+  gap: 10px;
+}
+
+.redak {
+  display: flex;
+  justify-content: space-between;
+  justify-self: center;
+  align-self: center;
+  width: 60%;
+}
+
+#smanji,
+#povecaj {
+  padding: 2px 5px;
+  border-radius: 50%;
+  border: none;
+  background-color: #3f72af;
+  color: white;
+  cursor: pointer;
+}
+
+#kolicina {
+  padding: 0 5px;
+  border: 1px solid #828181;
+  border-radius: 5px;
+}
+
+#kolicina-redak button {
+  margin: 0 5px;
+  border-radius: 50%;
+  border: none;
+  background-color: #3f72af;
+  color: white;
+  cursor: pointer;
+}
+
+#kolicina-redak {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#kolicina-redak button:hover {
+  background-color: #2c5f8e;
+}
+
+#kolicina-redak button:active {
+  background-color: #123250;
+}
+
+#cart-kosarica-broj {
+  position: absolute;
+  top: 50%;
+  transform: translate(50%, -50%);
+  background-color: red;
+  color: white;
+  padding: 1px 3px;
+  border-radius: 50%;
+  display: none;
+}
