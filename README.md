@@ -25,4 +25,4 @@ Ovisno o predmetu, korišteni su različiti programski jezici i tehnologije, ukl
 
 ## Napomene
 
-- Ova rješenja predstavljaju osobni rad i ne bi se trebala koristiti za direktno prepisivanje
+- Ova rješenja predstavljaju osobni rad i zabranjeno ih je koristiti za direktno prepisivanje
